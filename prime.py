@@ -45,7 +45,7 @@ async def handler(event):
             await event.respond([24])
             return  
 
-        elif [25] in pesan:
+        elif [25] in x:
             time.sleep(2)
             await event.respond([26])
             print(time.asctime(), '[27]')
