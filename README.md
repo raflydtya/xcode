@@ -1,2 +1,1 @@
-## Grup Join
-<p align="center"><"Running On Termux" />
+<p align="center"> Running On Termux
