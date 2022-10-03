@@ -65,7 +65,7 @@ class ravi():
         #self.join_channel()
         self.send_message()
 
-id0 = ravi("","","0",group0) #Akun 0
+id0 = ravi("ID","HASH","0",group0) #Akun 0 
 id1 = ravi("","","1",group1) #Akun 1
 id2 = ravi("","","2",group2) #Akun 2
 id3 = ravi("","","3",group3) #Akun 3
