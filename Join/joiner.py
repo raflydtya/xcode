@@ -1,16 +1,43 @@
 from telethon import TelegramClient, functions, sync, events
-from pesan import fetch_text, group0, group1, group2, group3, group4
 import time
 from telethon.errors import *
 from threading import *
 import asyncio
+
+def fetch_text():
+    self = """ """ # Pesan
+    return self
+
+def group0():
+    channel_list = [] # Username Grup Akun Ke 0
+
+    return channel_list
+
+def group1():
+    channel_list = [] # Username Grup Akun Ke 1
+
+    return channel_list
+
+def group2():
+    channel_list = [] # Username Grup Akun ke 2
+
+    return channel_list
+
+def group3():
+    channel_list = [] # Username Grup Akun ke 3
+
+    return channel_list
+
+def group4():
+    channel_list = [] # Username Grup Akun ke 4
+
+    return channel_list
 
 group0 = group0()
 group1 = group1()
 group2 = group2()
 group3 = group3()
 group4 = group4()
-
 
 class ravi():
     def __init__(self,T_id,T_hash,owner,group):
@@ -62,14 +89,18 @@ class ravi():
 
     def account(self):
         self.connection()
-        #self.join_channel()
+        self.join_channel()
         self.send_message()
 
-id0 = ravi("ID","HASH","0",group0) #Akun 0 
-id1 = ravi("","","1",group1) #Akun 1
-id2 = ravi("","","2",group2) #Akun 2
-id3 = ravi("","","3",group3) #Akun 3
-id4 = ravi("","","4",group4) #Akun 4
+api_id = ''
+api_hash = ''
+#sesi_file = ''
+
+id0 = ravi(api_id,api_hash,"0",group0) #Akun 0 
+id1 = ravi(api_id,api_hash,"1",group1) #Akun 1
+id2 = ravi(api_id,api_hash,"2",group2) #Akun 2
+id3 = ravi(api_id,api_hash,"3",group3) #Akun 3
+id4 = ravi(api_id,api_hash,"4",group4) #Akun 4
 
 t1 = Thread(target=id0.account)
 t2 = Thread(target=id1.account)
