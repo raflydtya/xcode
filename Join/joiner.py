@@ -1,3 +1,5 @@
+#Join Bareng
+
 from telethon import TelegramClient, functions, sync, events
 import time
 from telethon.errors import *
